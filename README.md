@@ -7,8 +7,8 @@ Khew-Khew! | Jokes App : To demonstrate clean architecture.
 ![Khew-Khew!](/khew.png)
 
 
-#### Criedts to :heart: : :
+#### Criedts to :heart: 
 
-[Lint School](https://twitter.com/lintschool)
-[Swift Cairo](http://twitter.com/SwiftCairo/)
+* [Lint School](https://twitter.com/lintschool)
+* [Swift Cairo](http://twitter.com/SwiftCairo/)
 
