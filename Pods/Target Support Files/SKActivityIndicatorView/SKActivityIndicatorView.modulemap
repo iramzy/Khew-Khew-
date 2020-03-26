@@ -1,0 +1,6 @@
+module SKActivityIndicatorView {
+  umbrella header "SKActivityIndicatorView-umbrella.h"
+
+  export *
+  module * { export * }
+}

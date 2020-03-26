@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1158CBCF6393EBAC5DA9C6A /* libPods-Khew-Khew!.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD0EA5692DC4BDEC354FE7C /* libPods-Khew-Khew!.a */; };
+		CE54DFDE24280D9500B59461 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54DFDD24280D9500B59461 /* ErrorHandling.swift */; };
+		CE54DFE024280DE200B59461 /* JokesErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54DFDF24280DE200B59461 /* JokesErrorHandling.swift */; };
+		CE54DFE42428189500B59461 /* JokesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54DFE32428189500B59461 /* JokesRepo.swift */; };
+		CE54DFE62428191B00B59461 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54DFE52428191A00B59461 /* Joke.swift */; };
+		CE54DFE82428203100B59461 /* JokesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE54DFE72428203100B59461 /* JokesUsecase.swift */; };
+		CE62A7B32426804200ABB59D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7B22426804200ABB59D /* AppDelegate.swift */; };
+		CE62A7B52426804200ABB59D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7B42426804200ABB59D /* SceneDelegate.swift */; };
+		CE62A7B72426804200ABB59D /* JokesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7B62426804200ABB59D /* JokesView.swift */; };
+		CE62A7BA2426804200ABB59D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE62A7B82426804200ABB59D /* Main.storyboard */; };
+		CE62A7BC2426806700ABB59D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE62A7BB2426806700ABB59D /* Assets.xcassets */; };
+		CE62A7BF2426806700ABB59D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE62A7BD2426806700ABB59D /* LaunchScreen.storyboard */; };
+		CE62A7CD2426975600ABB59D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7CC2426975600ABB59D /* Endpoint.swift */; };
+		CE62A7D024269DDF00ABB59D /* GetJokesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7CF24269DDF00ABB59D /* GetJokesEndpoint.swift */; };
+		CE62A7D224269EC200ABB59D /* JokesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7D124269EC200ABB59D /* JokesEndpoint.swift */; };
+		CE62A7D42426B96400ABB59D /* EndpointEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7D32426B96400ABB59D /* EndpointEncoding.swift */; };
+		CE62A7D82426C56100ABB59D /* QureyURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7D72426C56100ABB59D /* QureyURLEncoding.swift */; };
+		CE62A7DA2426C57400ABB59D /* JsonURLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7D92426C57400ABB59D /* JsonURLEncoding.swift */; };
+		CE62A7E02426C91B00ABB59D /* EndPointAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7DF2426C91B00ABB59D /* EndPointAuthentication.swift */; };
+		CE62A7E42426D22C00ABB59D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7E32426D22C00ABB59D /* NetworkClient.swift */; };
+		CE62A7E62426D3DC00ABB59D /* AlamofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE62A7E52426D3DC00ABB59D /* AlamofireClient.swift */; };
+		CE7A813E242BF23500891EFE /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE7B34112428EFE200FE3FA1 /* JokesPeresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B34102428EFE200FE3FA1 /* JokesPeresenter.swift */; };
+		CE7B34142428F1F400FE3FA1 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B34132428F1F400FE3FA1 /* Dynamic.swift */; };
+		CE7B34162428F28E00FE3FA1 /* JokesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B34152428F28E00FE3FA1 /* JokesViewModel.swift */; };
+		CE7B342724294BA200FE3FA1 /* JokesUsecaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B342624294BA200FE3FA1 /* JokesUsecaseMock.swift */; };
+		CE7B3429242955FF00FE3FA1 /* JokesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B3428242955FF00FE3FA1 /* JokesPresenterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE7B34202429495600FE3FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE62A7A72426804100ABB59D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE62A7AE2426804200ABB59D;
+			remoteInfo = "Khew-Khew!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE7A813C242BF23000891EFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE7A813E242BF23500891EFE /* BuildFile in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B9FE2A18BC036437F6DC8A05 /* Pods-Khew-Khew!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khew-Khew!.release.xcconfig"; path = "Target Support Files/Pods-Khew-Khew!/Pods-Khew-Khew!.release.xcconfig"; sourceTree = "<group>"; };
+		CE54DFDD24280D9500B59461 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		CE54DFDF24280DE200B59461 /* JokesErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesErrorHandling.swift; sourceTree = "<group>"; };
+		CE54DFE32428189500B59461 /* JokesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesRepo.swift; sourceTree = "<group>"; };
+		CE54DFE52428191A00B59461 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		CE54DFE72428203100B59461 /* JokesUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesUsecase.swift; sourceTree = "<group>"; };
+		CE62A7AF2426804200ABB59D /* Khew-Khew!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Khew-Khew!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE62A7B22426804200ABB59D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE62A7B42426804200ABB59D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE62A7B62426804200ABB59D /* JokesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesView.swift; sourceTree = "<group>"; };
+		CE62A7B92426804200ABB59D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE62A7BB2426806700ABB59D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE62A7BE2426806700ABB59D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE62A7C02426806700ABB59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE62A7CC2426975600ABB59D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		CE62A7CF24269DDF00ABB59D /* GetJokesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJokesEndpoint.swift; sourceTree = "<group>"; };
+		CE62A7D124269EC200ABB59D /* JokesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesEndpoint.swift; sourceTree = "<group>"; };
+		CE62A7D32426B96400ABB59D /* EndpointEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointEncoding.swift; sourceTree = "<group>"; };
+		CE62A7D72426C56100ABB59D /* QureyURLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QureyURLEncoding.swift; sourceTree = "<group>"; };
+		CE62A7D92426C57400ABB59D /* JsonURLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonURLEncoding.swift; sourceTree = "<group>"; };
+		CE62A7DF2426C91B00ABB59D /* EndPointAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointAuthentication.swift; sourceTree = "<group>"; };
+		CE62A7E32426D22C00ABB59D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CE62A7E52426D3DC00ABB59D /* AlamofireClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireClient.swift; sourceTree = "<group>"; };
+		CE7A8136242BF14A00891EFE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7A8139242BF23000891EFE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7A813F242BF23900891EFE /* SKActivityIndicatorView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SKActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7B34102428EFE200FE3FA1 /* JokesPeresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesPeresenter.swift; sourceTree = "<group>"; };
+		CE7B34132428F1F400FE3FA1 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		CE7B34152428F28E00FE3FA1 /* JokesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewModel.swift; sourceTree = "<group>"; };
+		CE7B341B2429495500FE3FA1 /* Khew-Khew!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Khew-Khew!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7B341F2429495600FE3FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7B342624294BA200FE3FA1 /* JokesUsecaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesUsecaseMock.swift; sourceTree = "<group>"; };
+		CE7B3428242955FF00FE3FA1 /* JokesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesPresenterTests.swift; sourceTree = "<group>"; };
+		D7F3EF3FA6D998B8786A8961 /* Pods-Khew-Khew!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Khew-Khew!.debug.xcconfig"; path = "Target Support Files/Pods-Khew-Khew!/Pods-Khew-Khew!.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD0EA5692DC4BDEC354FE7C /* libPods-Khew-Khew!.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Khew-Khew!.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE62A7AC2426804200ABB59D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1158CBCF6393EBAC5DA9C6A /* libPods-Khew-Khew!.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B34182429495500FE3FA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CE30B645ADBC6C305FA92E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7A813F242BF23900891EFE /* SKActivityIndicatorView.framework */,
+				CE7A8139242BF23000891EFE /* Alamofire.framework */,
+				CE7A8136242BF14A00891EFE /* Alamofire.framework */,
+				FBD0EA5692DC4BDEC354FE7C /* libPods-Khew-Khew!.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAEC8984F0B5C9BDB74D09AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7F3EF3FA6D998B8786A8961 /* Pods-Khew-Khew!.debug.xcconfig */,
+				B9FE2A18BC036437F6DC8A05 /* Pods-Khew-Khew!.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE54DFDC24280D6D00B59461 /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				CE54DFDD24280D9500B59461 /* ErrorHandling.swift */,
+				CE54DFDF24280DE200B59461 /* JokesErrorHandling.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		CE54DFE12428183300B59461 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CE54DFE22428183D00B59461 /* Jokes */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CE54DFE22428183D00B59461 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7B62426804200ABB59D /* JokesView.swift */,
+				CE54DFE32428189500B59461 /* JokesRepo.swift */,
+				CE54DFE52428191A00B59461 /* Joke.swift */,
+				CE54DFE72428203100B59461 /* JokesUsecase.swift */,
+				CE7B34102428EFE200FE3FA1 /* JokesPeresenter.swift */,
+				CE7B34152428F28E00FE3FA1 /* JokesViewModel.swift */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		CE62A7A62426804100ABB59D = {
+			isa = PBXGroup;
+			children = (
+				CE62A7B12426804200ABB59D /* Khew-Khew! */,
+				CE7B341C2429495500FE3FA1 /* Khew-Khew!Tests */,
+				CE62A7B02426804200ABB59D /* Products */,
+				CAEC8984F0B5C9BDB74D09AD /* Pods */,
+				2CE30B645ADBC6C305FA92E3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE62A7B02426804200ABB59D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7AF2426804200ABB59D /* Khew-Khew!.app */,
+				CE7B341B2429495500FE3FA1 /* Khew-Khew!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE62A7B12426804200ABB59D /* Khew-Khew! */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B34122428F1D700FE3FA1 /* SupportingFiles */,
+				CE62A7C82426861B00ABB59D /* Core */,
+				CE62A7C72426860D00ABB59D /* Configuration */,
+				CE54DFE12428183300B59461 /* Scenes */,
+				CE62A7C92426863200ABB59D /* Resources */,
+				CE62A7C6242685FC00ABB59D /* Externals */,
+				CE62A7B82426804200ABB59D /* Main.storyboard */,
+				CE62A7BD2426806700ABB59D /* LaunchScreen.storyboard */,
+			);
+			path = "Khew-Khew!";
+			sourceTree = "<group>";
+		};
+		CE62A7C6242685FC00ABB59D /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7D52426C4D900ABB59D /* Networking */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		CE62A7C72426860D00ABB59D /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7C02426806700ABB59D /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CE62A7C82426861B00ABB59D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7B22426804200ABB59D /* AppDelegate.swift */,
+				CE62A7B42426804200ABB59D /* SceneDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE62A7C92426863200ABB59D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7BB2426806700ABB59D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE62A7CE24269D6200ABB59D /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7CC2426975600ABB59D /* Endpoint.swift */,
+				CE62A7D124269EC200ABB59D /* JokesEndpoint.swift */,
+				CE62A7CF24269DDF00ABB59D /* GetJokesEndpoint.swift */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		CE62A7D52426C4D900ABB59D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CE54DFDC24280D6D00B59461 /* ErrorHandling */,
+				CE62A7E22426D18800ABB59D /* Client */,
+				CE62A7DE2426C70300ABB59D /* Authentication */,
+				CE62A7D62426C53B00ABB59D /* Encoding */,
+				CE62A7CE24269D6200ABB59D /* EndPoints */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CE62A7D62426C53B00ABB59D /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7D32426B96400ABB59D /* EndpointEncoding.swift */,
+				CE62A7D72426C56100ABB59D /* QureyURLEncoding.swift */,
+				CE62A7D92426C57400ABB59D /* JsonURLEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		CE62A7DE2426C70300ABB59D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7DF2426C91B00ABB59D /* EndPointAuthentication.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CE62A7E22426D18800ABB59D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A7E32426D22C00ABB59D /* NetworkClient.swift */,
+				CE62A7E52426D3DC00ABB59D /* AlamofireClient.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CE7B34122428F1D700FE3FA1 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B34132428F1F400FE3FA1 /* Dynamic.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CE7B341C2429495500FE3FA1 /* Khew-Khew!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B342524294B6000FE3FA1 /* Mocks */,
+				CE7B341F2429495600FE3FA1 /* Info.plist */,
+				CE7B3428242955FF00FE3FA1 /* JokesPresenterTests.swift */,
+			);
+			path = "Khew-Khew!Tests";
+			sourceTree = "<group>";
+		};
+		CE7B342524294B6000FE3FA1 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B342624294BA200FE3FA1 /* JokesUsecaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE62A7AE2426804200ABB59D /* Khew-Khew! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE62A7C32426806700ABB59D /* Build configuration list for PBXNativeTarget "Khew-Khew!" */;
+			buildPhases = (
+				C67FA77972A6085F13CE1532 /* [CP] Check Pods Manifest.lock */,
+				CE62A7AB2426804200ABB59D /* Sources */,
+				CE62A7AC2426804200ABB59D /* Frameworks */,
+				CE62A7AD2426804200ABB59D /* Resources */,
+				CE7A813C242BF23000891EFE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Khew-Khew!";
+			productName = "Khew-Khew!";
+			productReference = CE62A7AF2426804200ABB59D /* Khew-Khew!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7B341A2429495500FE3FA1 /* Khew-Khew!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7B34242429495600FE3FA1 /* Build configuration list for PBXNativeTarget "Khew-Khew!Tests" */;
+			buildPhases = (
+				CE7B34172429495500FE3FA1 /* Sources */,
+				CE7B34182429495500FE3FA1 /* Frameworks */,
+				CE7B34192429495500FE3FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE7B34212429495600FE3FA1 /* PBXTargetDependency */,
+			);
+			name = "Khew-Khew!Tests";
+			productName = "Khew-Khew!Tests";
+			productReference = CE7B341B2429495500FE3FA1 /* Khew-Khew!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE62A7A72426804100ABB59D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Ahmed Ramzy";
+				TargetAttributes = {
+					CE62A7AE2426804200ABB59D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CE7B341A2429495500FE3FA1 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CE62A7AE2426804200ABB59D;
+					};
+				};
+			};
+			buildConfigurationList = CE62A7AA2426804200ABB59D /* Build configuration list for PBXProject "Khew-Khew!" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE62A7A62426804100ABB59D;
+			productRefGroup = CE62A7B02426804200ABB59D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE62A7AE2426804200ABB59D /* Khew-Khew! */,
+				CE7B341A2429495500FE3FA1 /* Khew-Khew!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE62A7AD2426804200ABB59D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE62A7BF2426806700ABB59D /* LaunchScreen.storyboard in Resources */,
+				CE62A7BC2426806700ABB59D /* Assets.xcassets in Resources */,
+				CE62A7BA2426804200ABB59D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B34192429495500FE3FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C67FA77972A6085F13CE1532 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Khew-Khew!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE62A7AB2426804200ABB59D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE62A7B72426804200ABB59D /* JokesView.swift in Sources */,
+				CE62A7E62426D3DC00ABB59D /* AlamofireClient.swift in Sources */,
+				CE62A7D82426C56100ABB59D /* QureyURLEncoding.swift in Sources */,
+				CE62A7DA2426C57400ABB59D /* JsonURLEncoding.swift in Sources */,
+				CE54DFE82428203100B59461 /* JokesUsecase.swift in Sources */,
+				CE62A7D42426B96400ABB59D /* EndpointEncoding.swift in Sources */,
+				CE62A7B32426804200ABB59D /* AppDelegate.swift in Sources */,
+				CE62A7CD2426975600ABB59D /* Endpoint.swift in Sources */,
+				CE62A7D024269DDF00ABB59D /* GetJokesEndpoint.swift in Sources */,
+				CE7B34112428EFE200FE3FA1 /* JokesPeresenter.swift in Sources */,
+				CE54DFDE24280D9500B59461 /* ErrorHandling.swift in Sources */,
+				CE7B34142428F1F400FE3FA1 /* Dynamic.swift in Sources */,
+				CE62A7E42426D22C00ABB59D /* NetworkClient.swift in Sources */,
+				CE54DFE42428189500B59461 /* JokesRepo.swift in Sources */,
+				CE62A7E02426C91B00ABB59D /* EndPointAuthentication.swift in Sources */,
+				CE62A7D224269EC200ABB59D /* JokesEndpoint.swift in Sources */,
+				CE54DFE024280DE200B59461 /* JokesErrorHandling.swift in Sources */,
+				CE54DFE62428191B00B59461 /* Joke.swift in Sources */,
+				CE62A7B52426804200ABB59D /* SceneDelegate.swift in Sources */,
+				CE7B34162428F28E00FE3FA1 /* JokesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7B34172429495500FE3FA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7B342724294BA200FE3FA1 /* JokesUsecaseMock.swift in Sources */,
+				CE7B3429242955FF00FE3FA1 /* JokesPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE7B34212429495600FE3FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE62A7AE2426804200ABB59D /* Khew-Khew! */;
+			targetProxy = CE7B34202429495600FE3FA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE62A7B82426804200ABB59D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE62A7B92426804200ABB59D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE62A7BD2426806700ABB59D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE62A7BE2426806700ABB59D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE62A7C12426806700ABB59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE62A7C22426806700ABB59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE62A7C42426806700ABB59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F3EF3FA6D998B8786A8961 /* Pods-Khew-Khew!.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YM9Q56F5D;
+				INFOPLIST_FILE = "$(SRCROOT)/Khew-Khew!/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ramzy.Khew-Khew-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE62A7C52426806700ABB59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9FE2A18BC036437F6DC8A05 /* Pods-Khew-Khew!.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YM9Q56F5D;
+				INFOPLIST_FILE = "$(SRCROOT)/Khew-Khew!/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ramzy.Khew-Khew-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE7B34222429495600FE3FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YM9Q56F5D;
+				INFOPLIST_FILE = "Khew-Khew!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ramzy.Khew-Khew-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Khew-Khew!.app/Khew-Khew!";
+			};
+			name = Debug;
+		};
+		CE7B34232429495600FE3FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YM9Q56F5D;
+				INFOPLIST_FILE = "Khew-Khew!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ramzy.Khew-Khew-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Khew-Khew!.app/Khew-Khew!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE62A7AA2426804200ABB59D /* Build configuration list for PBXProject "Khew-Khew!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE62A7C12426806700ABB59D /* Debug */,
+				CE62A7C22426806700ABB59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE62A7C32426806700ABB59D /* Build configuration list for PBXNativeTarget "Khew-Khew!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE62A7C42426806700ABB59D /* Debug */,
+				CE62A7C52426806700ABB59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7B34242429495600FE3FA1 /* Build configuration list for PBXNativeTarget "Khew-Khew!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7B34222429495600FE3FA1 /* Debug */,
+				CE7B34232429495600FE3FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE62A7A72426804100ABB59D /* Project object */;
+}

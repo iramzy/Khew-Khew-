@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - SKActivityIndicatorView (0.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SKActivityIndicatorView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SKActivityIndicatorView
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SKActivityIndicatorView: f46936f760d33eb8235333242269bf01cc9248ae
+
+PODFILE CHECKSUM: 88d62cc775e23f1b69c04c05ed263119ce3f3ddd
+
+COCOAPODS: 1.8.4
